@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             // Проверяем, пустое ли поле ввода
             if (!name.isEmpty()) {
                 // Выводим текст в TextView с использованием введённого имени
-                textView.setText(String.format("Привет '%s' !", name));
+                textView.setText(String.format("Привет %s !", name));
             }
         });
     }
