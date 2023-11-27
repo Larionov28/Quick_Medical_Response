@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Quick Medical Response</string>
+    <string name="button_text">Нажми меня</string>
+    <string name="edit_text">Введи имя</string>
 </resources>
