@@ -2,4 +2,6 @@
     <string name="app_name">Quick Medical Response</string>
     <string name="button_text">Нажми меня</string>
     <string name="edit_text">Введи имя</string>
+    <string name="scan_qr_button_label">Сканировать QR</string>
+    <string name="scan_qr_button_description">Кнопка для открытия сканера QR</string>
 </resources>
