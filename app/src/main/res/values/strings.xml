@@ -2,6 +2,10 @@
     <string name="app_name">QR-Medical</string>
     <string name="button_text">Нажми меня</string>
     <string name="edit_text">Введи имя</string>
-    <string name="scan_qr_button_label">Сканировать QR</string>
+    <string name="scan_qr_button_label">Сканировать QR-код</string>
     <string name="scan_qr_button_description">Кнопка для открытия сканера QR</string>
+    <string name="todo">TODO</string>
+    <string name="hello">Добро пожаловать!</string>
+    <string name="info1">Подробная информация</string>
+    <string name="info">Краткая информация</string>
 </resources>
