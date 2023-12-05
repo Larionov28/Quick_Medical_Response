@@ -96,43 +96,52 @@ public class MainActivity extends AppCompatActivity {
 
             String medicineName = textView1.getText().toString();
 
-            if (medicineName.equals("Мукалтин")) {
-                Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
-                intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "mucaltin.txt");
-                startActivity(intent);
-            }
-            if (medicineName.equals("Валидол")) {
-                Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
-                intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "validol.txt");
-                startActivity(intent);
-            }
-            if (medicineName.equals("ТАЙЛОЛ ХОТ")) {
-                Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
-                intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "tailolhot.txt");
-                startActivity(intent);
-            }
-            if (medicineName.equals("Перекись водорода")) {
-                Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
-                intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "perekis.txt");
-                startActivity(intent);
-            }
-            if (medicineName.equals("Линкас")) {
-                Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
-                intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "linkas.txt");
-                startActivity(intent);
-            }
-            if (medicineName.equals("НО-ШПА")) {
-                Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
-                intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "noshpa.txt");
-                startActivity(intent);
-            }
-            if (medicineName.equals("Люголит")) {
-                Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
-                intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "lugol.txt");
-                startActivity(intent);
-            }
-            else {
-                Toast.makeText(getApplicationContext(), "Такого препарата нет в базе данных", Toast.LENGTH_SHORT).show();
+            switch (medicineName) {
+                case "Мукалтин": {
+                    Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+                    intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "mucaltin.txt");
+                    startActivity(intent);
+                    break;
+                }
+                case "Валидол": {
+                    Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+                    intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "validol.txt");
+                    startActivity(intent);
+                    break;
+                }
+                case "ТАЙЛОЛ ХОТ": {
+                    Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+                    intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "tailolhot.txt");
+                    startActivity(intent);
+                    break;
+                }
+                case "Перекись водорода": {
+                    Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+                    intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "perekis.txt");
+                    startActivity(intent);
+                    break;
+                }
+                case "Линкас": {
+                    Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+                    intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "linkas.txt");
+                    startActivity(intent);
+                    break;
+                }
+                case "НО-ШПА": {
+                    Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+                    intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "noshpa.txt");
+                    startActivity(intent);
+                    break;
+                }
+                case "Люголит": {
+                    Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+                    intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "lugol.txt");
+                    startActivity(intent);
+                    break;
+                }
+                default:
+                    Toast.makeText(getApplicationContext(), "Такого препарата нет в базе данных", Toast.LENGTH_SHORT).show();
+                    break;
             }
         });
 
