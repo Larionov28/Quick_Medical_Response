@@ -14,6 +14,8 @@ import androidx.core.content.ContextCompat;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import android.media.MediaPlayer;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.red));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         textView = findViewById(R.id.textView); // Находим TextView по его ID
 
@@ -145,6 +148,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.audio); // Замените на имя вашего аудиофайла
+        // Освободить ресурсы MediaPlayer после окончания воспроизведения
+        mediaPlayer.setOnCompletionListener(MediaPlayer::release);
+
+        mediaPlayer.start(); // Начать воспроизведение аудио
+
     }
 
     @Override
@@ -169,11 +178,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "Сканирование не выполнено", Toast.LENGTH_SHORT).show(), 600);
             super.onActivityResult(requestCode, resultCode, data);
         }
+
     }
-
-
-
-
 
 
 }

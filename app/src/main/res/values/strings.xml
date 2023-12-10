@@ -1,11 +1,13 @@
 <resources>
+    <string name="back">Вернуть</string>
+    <string name="istr">Инструкция</string>
+    <string name="nameru">Быстрый медицинский ответ</string>
+    <string name="scan_qr_button_label">СКАН</string> <string name="scan_qr_button_description">Кнопка для открытия сканера QR</string>
+    <string name="info1">Краткая информация</string>
+    <string name="info2">Подробная информация</string>
+    <string name="main">Главная</string>
+    <string name="list">Список</string>
+
     <string name="app_name">QR-Medical</string>
-    <string name="button_text">Нажми меня</string>
-    <string name="edit_text">Введи имя</string>
-    <string name="scan_qr_button_label">Сканировать QR-код</string>
-    <string name="scan_qr_button_description">Кнопка для открытия сканера QR</string>
     <string name="todo">TODO</string>
-    <string name="hello">Добро пожаловать!</string>
-    <string name="info1">Подробная информация</string>
-    <string name="info">Краткая информация</string>
 </resources>

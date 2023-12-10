@@ -2,6 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#FFFF0000</color>
-    <color name="gray">#008000</color>
+    <color name="red">#ED182C</color>
+
+    <color name="infobutton">#986CC1</color>
+    <color name="scanbutton">#E10000</color>
+    <color name="downbutton">#F96601</color>
 </resources>
