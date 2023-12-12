@@ -1,8 +1,8 @@
 <resources>
-    <string name="back">Вернуть</string>
+    <string name="back">Выход</string>
     <string name="istr">Инструкция</string>
     <string name="nameru">Быстрый медицинский ответ</string>
-    <string name="scan_qr_button_label">СКАН</string> <string name="scan_qr_button_description">Кнопка для открытия сканера QR</string>
+    <string name="scan_qr_button_label">СКАН</string>
     <string name="info1">Краткая информация</string>
     <string name="info2">Подробная информация</string>
     <string name="main">Главная</string>

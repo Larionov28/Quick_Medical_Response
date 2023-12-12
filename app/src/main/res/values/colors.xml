@@ -3,8 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#ED182C</color>
+    <color name="lime">#74E186</color>
+    <color name="greenback">#52935C</color>
 
-    <color name="infobutton">#986CC1</color>
+    <color name="infobutton">#17B182</color>
     <color name="scanbutton">#E10000</color>
-    <color name="downbutton">#F96601</color>
+    <color name="downbutton">#48D14D</color>
 </resources>
