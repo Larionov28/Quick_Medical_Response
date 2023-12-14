@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,6 +21,14 @@ public class FileContentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_file_content);
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // скрывает нижнюю панель навигации
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN // скрывает строку состояния
+                        | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        );
 
         TextView textView = findViewById(R.id.file_content_text_view);
 
@@ -43,5 +53,11 @@ public class FileContentActivity extends AppCompatActivity {
             e.printStackTrace();
             textView.setText("Ошибка чтения файла " + fileName);
         }
+
+        Button button4 = findViewById(R.id.button4);
+        button4.setOnClickListener(v -> {
+            finish(); // Закрываем текущую активность, чтобы вернуться к MainActivity
+        });
+
     }
 }

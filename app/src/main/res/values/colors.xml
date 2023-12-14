@@ -6,7 +6,7 @@
     <color name="lime">#74E186</color>
     <color name="greenback">#52935C</color>
 
-    <color name="infobutton">#17B182</color>
-    <color name="scanbutton">#E10000</color>
-    <color name="downbutton">#48D14D</color>
+    <color name="scanbutton">#069FAA</color>
+    <color name="headbutton">#48D14D</color>
+    <color name="button">#17B182</color>
 </resources>

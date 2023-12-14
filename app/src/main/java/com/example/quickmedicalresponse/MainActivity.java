@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
         Button ScanButton = findViewById(R.id.button);
         Button BriefInfo = findViewById(R.id.button2);
         Button FullInfo = findViewById(R.id.button3);
+        ImageView imageView = findViewById(R.id.imageView);
+
+        BriefInfo.setVisibility(View.GONE);
+        FullInfo.setVisibility(View.GONE);
 
         ScanButton.setOnClickListener(v -> {
             IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
@@ -42,40 +47,47 @@ public class MainActivity extends AppCompatActivity {
             integrator.initiateScan();
             NameMed.setText("");
             BriefMed.setText("");
+            imageView.setImageResource(R.drawable.back8);
+            NameMed.setBackground(null);
+            BriefMed.setBackground(null);
+            BriefInfo.setVisibility(View.GONE);
+            FullInfo.setVisibility(View.GONE);
         });
 
         BriefInfo.setOnClickListener(v -> {
             String medicineName = NameMed.getText().toString();
+            BriefMed.setBackgroundResource(R.drawable.textview_border1);
             switch (medicineName) {
                 case "Мукалтин": {
-                    String medicineInfo = "Препарат от кашля и заболеваний дыхательных путей. Для взрослых и детей от 12 лет рекомендуется принимать 1-2 таблетки 2-3 раза в день перед едой.";
+                    String medicineInfo = "Это медицинский препарат, который часто используется для лечения заболеваний дыхательных путей. Он обладает отхаркивающим действием, помогая разжижать и удалять мокроту из дыхательных путей. Это делает его полезным для лечения кашля, связанного с такими состояниями, как бронхит, трахеит и другие заболевания.";
                     BriefMed.setText(medicineInfo); break;
                 }
                 case "Валидол": {
-                    String medicineInfo = "Успокаивающее средство для облегчения стенокардии, морской болезни, истерии и головной боли от нитратов. Принимается под язык: для взрослых 1-2 таблетки до полного рассасывания до 4 раз в день до 7 дней.";
+                    String medicineInfo = "Это медицинский препарат, используемый для облегчения сердечных болей, связанных с невротическими расстройствами и легкими приступами стенокардии. Он также помогает при укачивании и уменьшает чувство тревоги. Активным компонентом Валидола является ментол, который оказывает седативное и вазодилатирующее действие.";
                     BriefMed.setText(medicineInfo); break;
                 }
                 case "ТАЙЛОЛ ХОТ": {
-                    String medicineInfo = "Препарат помогает при простуде и гриппе, а также симптомах верхних дыхательных путей. Принимается, растворяя содержимое пакета в горячей воде и выпивая. Для взрослых максимальная суточная доза - 4 пакета.";
+                    String medicineInfo = "Это комбинированный медицинский препарат, который обычно используется для облегчения симптомов простуды и гриппа. Он может включать в себя такие компоненты, как парацетамол, фенилэфрин, аскорбиновая кислота (витамин С) и другие ингредиенты.";
                     BriefMed.setText(medicineInfo); break;
                 }
                 case "Перекись водорода": {
-                    String medicineInfo = "Препарат помогает при воспалениях и гнойных ранах. Наносят на повреждения кожи или слизистую ватным тампоном, смоченным раствором препарата. Не для полоскания полостей.";
+                    String medicineInfo = "Это медицинский препарат, который используется для дезинфекции и очистки ран, таких как порезы, царапины и ожоги. Она эффективна в уничтожении бактерий, предотвращении инфекций и ускорении процесса заживления. Также перекись водорода может использоваться для удаления мертвых тканей из ран, что способствует более быстрому их заживлению.";
                     BriefMed.setText(medicineInfo); break;
                 }
                 case "Линкас": {
-                    String medicineInfo = "Мазь для симптоматического лечения простуды, помогает с кашлем, заложенностью носа и болями в мышцах. Наносится на грудь или область боли 3-4 раза в день на протяжении 7 дней.";
+                    String medicineInfo = "Это медицинский бальзам на натуральной основе, используемый для облегчения симптомов простуды и кашля. Он помогает уменьшить заложенность носа, облегчает дыхание и снижает раздражение в горле, вызванное кашлем. Благодаря своим успокаивающим и отхаркивающим свойствам, он облегчает выведение мокроты и уменьшает частоту кашля.";
                     BriefMed.setText(medicineInfo); break;
                 }
                 case "НО-ШПА": {
-                    String medicineInfo = "Препарат помогает при спазмах в желчевыводящих, мочевыводящих путях, животе, головной боли. Для взрослых - 1-2 таблетки до 3 раз в день, детям от 6 до 12 лет - по 1 таблетке до 2 раз в день. Не для беременных и детей до 6 лет.";
+                    String medicineInfo = "Это медицинский препарат, который используется для облегчения спазмов гладкой мускулатуры в различных органах. Она эффективна при болях в животе, вызванных спазмами кишечника, желчного пузыря или желчевыводящих путей, а также при спазмах мочевыводящих путей, включая уретеральные колики.";
                     BriefMed.setText(medicineInfo); break;
                 }
                 case "Люголит": {
-                    String medicineInfo = "Антисептик для горла, применяется как спрей при ангине и проблемах с горлом. Не для беременных и детей до 8 лет.";
+                    String medicineInfo = "Это препарат, который часто используется для лечения заболеваний горла и рта. Он содержит йод, который обладает антисептическими свойствами, помогая уничтожать микробы и уменьшать воспаление. Люголь применяется при ларингите, фарингите, тонзиллите и других инфекционных и воспалительных заболеваниях горла.";
                     BriefMed.setText(medicineInfo); break;
                 }
                 default:
+                    BriefMed.setBackground(null);
                     Toast.makeText(getApplicationContext(), "Такого препарата нет в базе данных", Toast.LENGTH_SHORT).show(); break;
             }
         });
@@ -122,9 +134,23 @@ public class MainActivity extends AppCompatActivity {
                 default:
                     Toast.makeText(getApplicationContext(), "Такого препарата нет в базе данных", Toast.LENGTH_SHORT).show(); break;
             }
+
         });
 
+        Button button6 = findViewById(R.id.button6);
+        button6.setOnClickListener(v -> finish());
+
+        Button button7 = findViewById(R.id.button7);
+        button7.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, FileContentActivity.class);
+            intent.putExtra(FileContentActivity.FILE_NAME_EXTRA, "about.txt");
+            startActivity(intent);
+        });
+
+
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -132,12 +158,19 @@ public class MainActivity extends AppCompatActivity {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
 
         TextView NameMed = findViewById(R.id.textView2);
+        ImageView imageView = findViewById(R.id.imageView);
+        Button BriefInfo = findViewById(R.id.button2);
+        Button FullInfo = findViewById(R.id.button3);
         if (result != null) {
             if (result.getContents() == null) {
                 new Handler().postDelayed(() ->
                         Toast.makeText(this, "Сканирование отменено", Toast.LENGTH_SHORT).show(), 600);
             } else {
                 NameMed.setText(result.getContents());
+                imageView.setImageResource(R.drawable.back9);
+                NameMed.setBackgroundResource(R.drawable.textview_border1);
+                BriefInfo.setVisibility(View.VISIBLE);
+                FullInfo.setVisibility(View.VISIBLE);
                 new Handler().postDelayed(() ->
                         Toast.makeText(this, "Сканирование успешно", Toast.LENGTH_SHORT).show(), 600);
             }
