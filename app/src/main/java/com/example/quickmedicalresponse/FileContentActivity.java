@@ -7,12 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class FileContentActivity extends AppCompatActivity {
+
 
     public static final String FILE_NAME_EXTRA = "file_name";
 
@@ -58,6 +60,10 @@ public class FileContentActivity extends AppCompatActivity {
         button4.setOnClickListener(v -> {
             finish(); // Закрываем текущую активность, чтобы вернуться к MainActivity
         });
+
+
+
+
 
     }
 }
