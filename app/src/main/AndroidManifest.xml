@@ -17,6 +17,20 @@
         android:theme="@style/Theme.QuickMedicalResponse"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.QuickMedicalResponse" />
+        <activity
             android:name=".FileContentActivity"
             android:exported="false" />
         <activity
@@ -29,6 +43,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

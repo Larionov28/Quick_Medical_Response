@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EFF0F2"
     tools:context=".FileContentActivity">
 
 
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/textview_border"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="16dp"> <!-- Увеличенный отступ -->
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/file_content_text_view"
@@ -28,19 +29,48 @@
             android:textSize="16sp" />
     </ScrollView>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="134dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/main"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        app:icon="@mipmap/icon7"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="500px"
+        android:layout_height="150px"
+        android:layout_marginStart="20px"
+        android:layout_marginTop="2170px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/krat"
+        tools:ignore="PxUsage,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="500px"
+        android:layout_height="150px"
+        android:layout_marginStart="560px"
+        android:layout_marginTop="2170px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/podr"
+        tools:ignore="PxUsage,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
