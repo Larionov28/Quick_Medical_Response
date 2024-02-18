@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F2"
+    tools:context=".MainActivity2"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="104px"
+        android:layout_height="128px"
+        android:layout_marginStart="241px"
+        android:layout_marginTop="2172px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button22"
+        tools:ignore="PxUsage,TouchTargetSizeCheck,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="119px"
+        android:layout_height="130px"
+        android:layout_marginStart="40px"
+        android:layout_marginTop="2170px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button11"
+        tools:ignore="PxUsage,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="170px"
+        android:layout_height="131px"
+        android:layout_marginStart="703px"
+        android:layout_marginTop="2169px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button31"
+        tools:ignore="PxUsage,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/scanButton"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginTop="2141px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scan1"
+        tools:ignore="PxUsage,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="88px"
+        android:layout_height="116px"
+        android:layout_marginStart="939px"
+        android:layout_marginTop="2184px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button41"
+        tools:ignore="PxUsage,TouchTargetSizeCheck,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/Button1"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="50px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis1"
+        tools:ignore="PxUsage" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="230px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis2"
+        tools:ignore="PxUsage" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="410px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis3"
+        tools:ignore="PxUsage" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginStart="50px"
+        android:layout_marginTop="590px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis4"
+        tools:ignore="PxUsage" />
+
+    <ImageButton
+        android:id="@+id/button5"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="770px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis5"
+        tools:ignore="PxUsage" />
+
+    <ImageButton
+        android:id="@+id/Button6"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="950px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis6"
+        tools:ignore="PxUsage,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/button7"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="1130px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis7"
+        tools:ignore="PxUsage,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/button8"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="1310px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis8"
+        tools:ignore="PxUsage,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/button9"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="1490px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis9"
+        tools:ignore="PxUsage,VisualLintBounds" />
+
+    <ImageButton
+        android:id="@+id/button10"
+        android:layout_width="980px"
+        android:layout_height="130px"
+        android:layout_marginTop="1670px"
+        android:layout_marginStart="50px"
+        android:background="@drawable/rounded_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spis10"
+        tools:ignore="PxUsage,VisualLintBounds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
